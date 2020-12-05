@@ -1,0 +1,71 @@
+<br/> 
+
+<button type="button"  class="btn btn-primary" (click)="reset()"> Reset </button> <br/>
+<div class="container">
+	<div class="card m-5" style="width: 40rem;">
+		
+		<h4 class="card-header">Login</h4>
+		
+			<div class="card align-items-center" style="width: 40rem;">
+<div id="form-wrapper" style="max-width:500px;margin:auto;">
+
+	
+<form [formGroup]="loginform" (ngSubmit)="AfterSubmit()">
+	
+	
+	<br/>	<label>Email Address: </label>
+		<input type="text" placeholder="Enter Email address" style="width:400px;" formControlName="email" class="form-control" />
+		<span *ngIf="loginform.get('email').touched &&loginform.get('email').errors  "> 
+		<span *ngIf="loginform.get('email').hasError('required')" style="color: red;">Email address is required</span>
+
+		<div *ngIf="loginform.get('email').hasError('pattern')" style="color: red;"> Email address is invalid.</div>
+	</span>
+
+		<br />
+
+	<br/>	<label>Password: </label>
+		<input type="password" placeholder="Enter Password" style="width:400px;" formControlName="password" class="form-control" />
+		<span *ngIf="loginform.get('password').touched &&loginform.get('password').errors"> 
+		<span *ngIf="loginform.get('password').hasError('required')" style="color: red;">Enter Password</span>
+
+		<span *ngIf="loginform.get('password').hasError('minlength')" style="color: red;"> Password required atleast 5
+      characters</span>
+
+		<span *ngIf="loginform.get('password').hasError('maxlength')" style="color: red;"> Password should not exceed
+      15 characters.</span>
+	</span>
+		<br />
+
+		<a [routerLink]="['/register']" class="btn btn-link"> Register </a>
+		
+		  <button type="submit"  style="float:right;" class="btn btn-primary">Login</button> <br/>
+		  
+ <div style="float:right; font-size: 80%; position: relative; top:-0px">
+			
+		<a [routerLink]="['/forgot']" class="btn btn-link"> Forgot password </a>
+	  </div><br/> 
+</form>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- <div style="float:right; font-size: 80%; position: relative; top:-0px">
+			
+		<a [routerLink]="['/forgot']" class="btn btn-link"> Forgot password </a>
+	  </div><br/> -->

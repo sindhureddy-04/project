@@ -1,0 +1,41 @@
+<button style="float:leftt;" class="btn btn-primary"
+routerLink="/reset">Reset</button>
+<br/>
+
+
+
+ <button style="float:right;" class="btn btn-success" (click)="logout()"> Logout </button> <br/> 
+
+	<div class="card m-5" style="width: 50rem;">
+    <div class="card align-items-center" style="width: 50rem;">
+
+
+    
+<table width="100%" >
+  <tr>
+    <th style="width:30%"> Id </th>    
+        <th style="width:40%"> Status</th>
+        <th style="width:40%"> Edit</th>
+ </tr>
+ 
+    <tr *ngFor="let info of Data">
+
+      <td> <a href="/Dashboard/{{info.id}}">{{info.id}}</a></td>
+
+        <!-- <td><button style="float:center;"   class="btn btn-success" [ngStyle]="{'color': info.completed ==true ?'white':'black'}"> Active</button></td> -->
+        <td> <button style="float:center;"   class="btn btn-info" [ngStyle]="{'color': info.completed ?'white':'red'}">
+           {{info.completed ?"Active":"InActive"}}</button>
+          </td>
+  
+      <td><button style="float:center;" class="btn btn-primary" routerLink="/Dashboard/{{info.id}}">Edit</button> </td>
+   
+    
+    </tr>
+   
+  
+  </table>
+  
+
+</div>
+  
+</div>
