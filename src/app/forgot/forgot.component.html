@@ -23,6 +23,7 @@
 
 		<br />
 
+
 	<br/>	<label>Password: </label>
 		<input type="password" placeholder="Enter Password" style="width:400px;" formControlName="password" class="form-control" />
 		<span *ngIf="loginform.get('password').touched &&loginform.get('password').errors"> 
@@ -34,7 +35,8 @@
 		<span *ngIf="loginform.get('password').hasError('maxlength')" style="color: red;"> Password should not exceed
       15 characters.</span>
 	</span>
-		<br />
+		<br/>
+
 
 		<a [routerLink]="['/register']" class="btn btn-link"> Register </a>
 		

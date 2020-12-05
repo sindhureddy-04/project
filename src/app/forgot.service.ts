@@ -15,6 +15,7 @@ export class ForgotService {
   update(email,password)
   {
        
+    
    // console.log("email"+email);
    //console.log("password"+password);
     let res= localStorage.getItem("userdetails")=== null ? []:JSON.parse(localStorage.getItem("userdetails"));
