@@ -9,6 +9,7 @@ export class ResetService {
   constructor() { }
   public logindetails=localStorage.getItem("userdetails")=== null ?[]:JSON.parse(localStorage.getItem("userdetails"));
 
+  
   update(new_password)
   {
         const email=UserDetails.getCurrentUser();

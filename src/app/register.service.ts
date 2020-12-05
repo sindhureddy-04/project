@@ -11,11 +11,7 @@ export class RegisterService {
   
   public registerdetails=localStorage.getItem("userdetails")=== null ?[]:JSON.parse(localStorage.getItem("userdetails"));
 
- // console.log(localStorage.getItem("loginservice"));
-
- // const userdetails=[];
-       // userdetails.push( { email:this.loginform.value['email'],password:this.loginform.value['password']})
-       // localStorage.setItem("userdetails",JSON.stringify(userdetails));
+ 
 
   Validate(firstname, email, password, phonenumber, pincode)
   {
@@ -29,3 +25,8 @@ export class RegisterService {
   }
   
 }
+// console.log(localStorage.getItem("loginservice"));
+
+ // const userdetails=[];
+       // userdetails.push( { email:this.loginform.value['email'],password:this.loginform.value['password']})
+       // localStorage.setItem("userdetails",JSON.stringify(userdetails));
