@@ -4,6 +4,7 @@ import { UserDetails } from './models/userdetails';
 @Injectable({
   providedIn: 'root'
 })
+
 export class ResetService {
 
   constructor() { }
@@ -33,12 +34,13 @@ export class ResetService {
     return true;
     }
 
-   
   else{
     return false;
   }
 } 
 }
+
+
 
 /*
 import { UserDetails } from './models/userdetails';

@@ -5,7 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { IdComponent } from './id/id.component';
-import { NameComponent } from './name/name.component';
+
 import { UserIdComponent } from './user-id/user-id.component';
 import { StatusComponent } from './status/status.component';
 import { RegisterComponent } from './register/register.component';

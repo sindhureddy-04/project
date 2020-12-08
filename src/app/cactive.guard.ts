@@ -6,6 +6,8 @@ import {Router} from '@angular/router';
 @Injectable({
   providedIn: 'root'
 })
+
+
 export class CactiveGuard implements CanActivate {
   constructor(public routr:Router){}
   canActivate(

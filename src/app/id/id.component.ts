@@ -8,6 +8,7 @@ import { DashboardService } from '../dashboard.service';
   templateUrl: './id.component.html',
   styleUrls: ['./id.component.css']
 })
+
 export class IdComponent implements OnInit {
 
   
@@ -19,7 +20,6 @@ export class IdComponent implements OnInit {
   ngOnInit(): void {
     this.activate.params.subscribe(result => {this.id= (result['Id']) 
 
-    
    let subscription =  this.service.getData().subscribe(
    
       servicedata => { 

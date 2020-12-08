@@ -7,11 +7,7 @@ export class RegisterService {
 
   constructor() { }
 
-
-  
   public registerdetails=localStorage.getItem("userdetails")=== null ?[]:JSON.parse(localStorage.getItem("userdetails"));
-
- 
 
   Validate(firstname, email, password, phonenumber, pincode)
   {

@@ -11,13 +11,14 @@ import { DashboardService } from '../dashboard.service';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
+
+
 export class DashboardComponent implements OnInit {
 
   constructor(public routr : Router, private service:DashboardService) { }
   
   Data:any;
   
-
   ngOnInit(): void {
     
    let subscription =  this.service.getData().subscribe(

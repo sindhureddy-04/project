@@ -13,7 +13,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {DashboardService} from './dashboard.service';
 import { IdComponent } from './id/id.component';
-import { NameComponent } from './name/name.component';
+
 import { UserIdComponent } from './user-id/user-id.component';
 import { StatusComponent } from './status/status.component';
 import { RegisterComponent } from './register/register.component';
@@ -30,7 +30,7 @@ import { LogComponent } from './log/log.component';
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,PagenotfoundComponent, DashboardComponent, IdComponent,NameComponent,UserIdComponent,StatusComponent,
+    LoginComponent,PagenotfoundComponent, DashboardComponent, IdComponent,UserIdComponent,StatusComponent,
     RegisterComponent,
     ForgotComponent,
     ResetComponent,

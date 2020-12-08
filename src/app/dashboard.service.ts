@@ -7,6 +7,7 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
+
 export class DashboardService {
 
   url = "https://jsonplaceholder.typicode.com/todos";
