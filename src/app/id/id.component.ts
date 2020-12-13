@@ -11,7 +11,6 @@ import { DashboardService } from '../dashboard.service';
 
 export class IdComponent implements OnInit {
 
-  
   constructor(public routr : Router, public activate: ActivatedRoute ,private service:DashboardService) { }
   
   Data:any;
